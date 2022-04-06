@@ -196,8 +196,6 @@ def edit_post(post_id):
         db.session.commit()
         return redirect(url_for("show_post", post_id=post.id))
 
-
-
     return render_template("make-post.html", form=edit_form, logged_in=current_user.is_authenticated)
 
 
